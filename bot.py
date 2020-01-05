@@ -47,7 +47,7 @@ def mathan(message):
         bot.send_message(message.chat.id, 'Вот материал для первого семестра:', reply_markup=hideBoard)
         bot.send_chat_action(message.chat.id, 'typing')
         time.sleep(0.3)
-        doc = open('/Zorich1.pdf', 'rb')
+        doc = open('https://github.com/SlorrUndef/Mekhanic_Bot2/blob/master/Zorich1.pdf', 'rb')
         bot.send_document(message.chat.id, doc)
     if text == 'Второй семестр':
         bot.send_message(message.chat.id, 'Вот материал для второго семестра:', reply_markup=hideBoard)
